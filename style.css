@@ -1,0 +1,230 @@
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #405A7B;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+header h1{
+    color:#F2FBFE;
+    font-size: 1.8em;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 4px solid rgb(112, 135, 147);
+    border-radius: 100px;
+
+}
+
+.wave {
+    position: relative;
+}
+.wave img{
+    max-width: 100%;
+}
+.wave .welcome {
+    background-color: none;
+    color: rgb(215, 218, 223);
+    padding: 7px;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    
+  
+}
+.wave h2 {
+    font-size: 30px;
+    text-shadow: 1px 1px rgb(165, 179, 296);
+}
+.wave h2 span {
+    font-size: 1.5em;
+}
+
+nav {
+    background-color: lightgray;
+    padding: 20px;
+    position: sticky;
+    top: 85px;
+}
+    nav ul {
+        white-space: nowrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin: auto;
+}
+nav li {
+    width: 20%;
+    display: inline-block;
+    font-size: 24px;
+}
+nav li a{
+    text-decoration: none;
+    color: gray;
+ 
+}
+nav li a.join{
+    color: rgb(182, 39, 39);
+    font-weight: bold;
+}
+nav li a.contact{
+    color:rgb(65, 93, 123);
+    font-weight: bold;
+}
+main {
+    max-width: 100%;
+    width: 1200px;
+    margin: 50px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article h2{
+    color: rgb(57, 92, 100);
+    font-size: 30px;
+    text-decoration: underline;
+}
+article p{
+    line-height: 1.6em;
+    color: #4b4b4b;
+    font-size: 18px;
+}
+.images {
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+.images li{
+    display:  inline-block;
+    max-width: 100%;
+    margin: 10px 1%;
+}
+
+.images li img {
+    width: 450px;
+    height: 300px;
+}
+.images li img{
+    max-width: 100%;
+}
+section.join{
+    background: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+    color:#4b4b4b;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+.join h2{
+    font-size: 30px;
+    color: #808080;
+}
+.join p{
+    color: #808080;
+}
+form input {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: 4px solid white;
+    border-radius: 30px;
+    text-align: center;
+}
+footer {
+    background: lightgray;
+    padding: 10px;
+    text-align: center;
+    color: #808080;
+
+}
+/*pseudo classes*/
+nav li a:hover {
+    background: rgb(192, 210, 202);
+    text-decoration: underline;
+    padding: 3px; 
+}
+
+
+.images li:hover {
+    position: relative;
+    top:-4px;
+}
+form input:focus {
+border:4px dotted rgb(149, 174, 187);
+outline: none;
+}
+form input:valid{
+  border: 4px solid rgb(96, 122, 132);  
+}
+article p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+section.join p::first-letter{
+    font-size: 1.7em;
+}
+p::selection{
+    background-color: rgb(205, 200, 200);
+}
+article p::after{
+
+    content: '...';
+}
+/*responsive*/
+@media screen and (max-width: 1400px){
+    .wave .welcome h2{
+        font-size: 25px;
+    }
+    nav li{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 960px){
+    .wave .welcome h2{
+        font-size: 20px;
+    }
+}
+@media  screen and (max-width: 700px){
+
+    .wave .welcome{
+        position: relative;
+        text-align: center;
+        padding: 2px;
+    }
+
+    .wave .welcome br{
+        display: none;
+    }
+    .wave .welcome h2{
+        font-size: 15px;
+    }
+    .wave .welcom span{
+        font-szie: 1em;
+    }
+    .images li {
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    @media  screen and (max-width: 560px){
+        nav li{
+            font-size: 20px;
+            position: relative;
+            display: block;
+            width:100%;
+            margin: 12px 0;
+        }
+        header {
+            position: relative;
+        }
+        nav{
+            top: 0;
+        }
+    }
