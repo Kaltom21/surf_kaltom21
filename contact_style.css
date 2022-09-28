@@ -1,0 +1,36 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+} 
+
+.sky .beach .wave {
+    position: relative;
+}
+
+.sky{
+    height: 30%;
+    background-color: skyblue;
+}
+.beach{
+    height: 30%;
+    background: rgb(239, 239, 223);
+}
+.wave{
+    height: 40%;
+    background: #7eabe2;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid gray;
+    width: 100%;
+}
+.lines {
+ box-sizing: border-box;
+ border: 2px dashed rgb(118, 118, 180);
+ height: 0px;
+ width: 100%;
+ position: absolute;
+ top: 80%;
+
+}
