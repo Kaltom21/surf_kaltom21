@@ -1,36 +1,102 @@
-html, body{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    margin: 0;
-} 
-
-.sky .beach .wave {
+body{margin:0; position: relative;
+}
+.window img{
     position: relative;
+}    
+
+* {
+    font-weight: normal;
+    color: #333;
+    font-family: Calibri, sans-serif;
 }
 
-.sky{
-    height: 30%;
-    background-color: skyblue;
+
+h1{
+    font-size: 30px;
+    margin: 10px o;
+    color: #96B0C7;
 }
-.beach{
-    height: 30%;
-    background: rgb(239, 239, 223);
+.container p{
+    font-size: 20px;
+    color:#E4FDFC;
+
 }
-.wave{
-    height: 40%;
-    background: #7eabe2;
+
+
+ .container{
+    text-align: center;
+    padding:25px;
+    position: absolute;
+    top:50px;
+    width:500px;
+    left: 700px;
     box-sizing: border-box;
-    border-top: 10px solid grey;
-    border-bottom: 10px solid gray;
-    width: 100%;
+    border: 2px solid gray;
+    border-radius: 30px;
 }
-.lines {
- box-sizing: border-box;
- border: 2px dashed rgb(118, 118, 180);
- height: 0px;
- width: 100%;
- position: absolute;
- top: 80%;
+.container input{
+    padding: 10px;
+    border: 0;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #333;
+    font-size: 16px;
+}
+.container button{
+    padding:10px;
+    border: 0;
+    color: #fff;
+    background: #333;
+    margin-left: -5px;
+    margin-left: -5px;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #333;
+    font-size: 16px;
+}
+.cross{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    background: #555;
+    color: #ddd;
+    font-weight: bold;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    border-radius: 11px;
+}
 
+
+
+.container{
+    top: -500px;
+    transform-origin: 10px 10px;
+    animation: drop 0.5s ease forwards,
+               swing 4s 2s ease forwards;
+}
+
+@keyframes drop{
+    0%{opacity: 0}
+    70%{transform: translateY(700px)}
+    100%{transform: translateY(650px); opacity: 1}
+}
+@keyframes swing{
+    0%{transform: translateY(650px) rotateZ(0deg)}
+    40%{transform: translateY(650px)rotateZ(90deg)}
+    70%{transform: translateY(650px)rotatZ(70deg)}
+    100%{transform: translateY(650px)rotateZ(75deg)}
+}
+
+footer{
+    background: #2E5177;
+    padding: 25px;
+    text-align: center;
+}
+footer p{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+footer p:hover {
+    text-decoration: underline;
+    background: rgb(152, 167, 152);
 }
