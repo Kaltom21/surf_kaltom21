@@ -3,21 +3,7 @@
     color: #333;
     font-family: Calibri, sans-serif;
 }
-header{
-    padding: 24px;
-    background-color: #60646D;
-    width: 100%;
-    z-index: 1;
-    position: fixed;
-    top:0;
-    left:0;
-    text-align: center;
-}  
-header h1{
-    font-size: 24px;
-    color: #FFFFFC;
-    padding: 6px 12px;
-}
+
 .window{
     position: relative;
 }
@@ -25,8 +11,6 @@ header h1{
 .window img{
     width: 100%;
 }
-
-
 h1{
     font-size: 30px;
     margin: 10px o;
@@ -100,6 +84,39 @@ h1{
     100%{transform: translateY(650px)rotateZ(75deg)}
 }
 
+.wave {
+    position: relative;
+}
+ main{
+    max-width: 100%;
+    padding: 0 40px;
+    margin: 50px auto;
+ }
+
+  h2{
+    padding: 10px;
+    background: #98c1af ;
+    color:  #2E5177;
+    border: 2px solid #98afa6;
+    border-radius: 10px;
+}
+
+p{
+    line-height: 1.5em;
+    color: #2E5177;
+    font-size: 20px;
+}
+
+.wave img{
+    width:200px;
+    height: auto;
+    animation: wave 6s both infinite normal linear;
+}
+
+@keyframes wave{
+    from{transform: translateX(-100px)}
+    to{transform: translateX(1000px);}
+}
 .social {
     background: #2E5177;
     padding: 20px;
@@ -109,16 +126,23 @@ h1{
     text-align: left;
     font-size: 20px;
     font-family: sans-serif;
+    text-align: center;
 }
 
 .social img{
     width: 270px;
     height: 170x;
+    position: absolute;
+    top:92%;
 }
-.social a{
+.back {
+    padding:20px;
+    background: #96B0C7;
+    text-align: right;   
+}
+.back a{
     color: white;
     font-size: 20px;
-    text-align: center;
 }
 
 .social p:hover {
