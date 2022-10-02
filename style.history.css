@@ -29,40 +29,37 @@ header h1{
 }
 
 .koa img{
-    height: 780px;
-    width: 100%;
+    max-width: 100%;
 }
 .start{
     padding: 15px;
     background: rgb(196, 186, 186);
     position: sticky;
     top: 87px;
+    text-align: center;
 }
 .start h2{
     color: white;
     display: inline-block;
-   
 }
-.start h2:hover {
+.start h2:hover {   
     background: rgb(166, 197, 178);
     padding: 3px;
     text-decoration: underline;
 }
 .video_text{
-    max-width: 100%;
-    width: 1400px;
     margin: 30px auto;
     padding: 0 20px;
-    box-sizing: border-box;
 }
 .video_text p{
     color: rgb(90, 95, 92);
-    line-height: 1.7em;
-    font-size: 16px;
+    line-height: 1.8em;
+    font-size: 18px;
 }
 .video_text video{
-    width: 550px;
-    height: 350px;}
+    width: 570px;
+    height: 370px;
+}
 
 .image{
     text-align: center;
@@ -71,23 +68,24 @@ header h1{
 }
 .image li{
     display: inline-block;
-    max-width: 100%;
+    height: auto;
     margin: 10px 4%;
+    max-width: 100%;
 }
 .image li img{
-    width:450px;
-    height: 300px;
+    width:400px;
+    height: 270px;
 }
-
 footer {
     padding: 25px;
     background:rgb(196, 186, 186);
     text-align: center;
+    position: relative;
 }
 footer a{
     color: white;
     font-size: 24px;
-}
+
 
 
 

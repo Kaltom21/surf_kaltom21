@@ -1,13 +1,29 @@
-body{margin:0; position: relative;
-}
-.window img{
-    position: relative;
-}    
-
 * {
     font-weight: normal;
     color: #333;
     font-family: Calibri, sans-serif;
+}
+header{
+    padding: 24px;
+    background-color: #60646D;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top:0;
+    left:0;
+    text-align: center;
+}  
+header h1{
+    font-size: 24px;
+    color: #FFFFFC;
+    padding: 6px 12px;
+}
+.window{
+    position: relative;
+}
+
+.window img{
+    width: 100%;
 }
 
 
@@ -16,12 +32,6 @@ h1{
     margin: 10px o;
     color: #96B0C7;
 }
-.container p{
-    font-size: 20px;
-    color:#E4FDFC;
-
-}
-
 
  .container{
     text-align: center;
@@ -29,10 +39,16 @@ h1{
     position: absolute;
     top:50px;
     width:500px;
-    left: 700px;
+    left: 400px;
     box-sizing: border-box;
-    border: 2px solid gray;
+    border: 3px solid gray;
     border-radius: 30px;
+}
+
+.container p{
+    font-size: 20px;
+    color:#E4FDFC;
+
 }
 .container input{
     padding: 10px;
@@ -65,13 +81,11 @@ h1{
     border-radius: 11px;
 }
 
-
-
 .container{
     top: -500px;
     transform-origin: 10px 10px;
-    animation: drop 0.5s ease forwards,
-               swing 4s 2s ease forwards;
+    animation: drop 2s ease forwards,
+               swing 4s 2s ease alternate;
 }
 
 @keyframes drop{
@@ -86,17 +100,33 @@ h1{
     100%{transform: translateY(650px)rotateZ(75deg)}
 }
 
-footer{
+.social {
     background: #2E5177;
-    padding: 25px;
-    text-align: center;
+    padding: 20px;
 }
-footer p{
+.social p{
     color: white;
+    text-align: left;
     font-size: 20px;
     font-family: sans-serif;
 }
-footer p:hover {
-    text-decoration: underline;
-    background: rgb(152, 167, 152);
+
+.social img{
+    width: 270px;
+    height: 170x;
 }
+.social a{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.social p:hover {
+    text-decoration: underline;
+}
+.social img:hover{
+ background-color:rgb(180, 175, 175);
+}
+
+
+  
