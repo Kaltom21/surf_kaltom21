@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Surf Page</title>
+        <link rel="stylesheet" href="shop.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+    </head>
+    <body class="basket">
+        <header>
+            <h1>Surf Shop</h1>
+            <div class="basket-icon"><img src="img/basket.png"></div>
+        </header>
+        <ul class="products">
+            <li>
+                <img src="img/t-1.jpg" alt="t-shirt green">
+                <h2>Green T-shirt</h2>
+                <button>Add to Basket</button>
+            </li>
+            <li>
+                <img src="img/t-2.jpg" alt="t-shirt yellow">
+                <h2>Yellow T-shirt</h2>
+                <button>Add to Basket</button>
+            </li>
+            <li>
+                <img src="img/t-3.jpg" alt="t-shirt pink">
+                <h2>Pink T-shirt</h2>
+                <button>Add to Basket</button>
+            </li>
+            <li>
+                <img src="img/t-1.jpg" alt="t-shirt green">
+                <h2>Green T-shirt</h2>
+                <button>Add to Basket</button>
+            </li>
+            <li>
+                <img src="img/t-2.jpg" alt="t-shirt yellow">
+                <h2>Yellow T-shirt</h2>
+                <button>Add to Basket</button>
+            </li>
+            <li>
+                <img src="img/t-3.jpg" alt="t-shirt pink">
+                <h2>Pink T-shirt</h2>
+                <button>Add to Basket</button>
+            </li>
+        </ul>
+        <script>
+            $("button").on("click", function(){
+                $(this).closest("li")
+                .find("img")
+                .clone()
+                .addClass("zoom")
+                .appendTo("body");
+                setTimeout(function(){
+                    $(".zoom").remove();
+                }, 1000);            
+            });
+        </script>   
+        <footer>
+            <a href="index.html">Back</a>
+        </footer>
+    </body>
+</html>
