@@ -2,6 +2,7 @@
 body, header {
     font-family: sans-serif;
 }
+
 header{
     padding: 10px 20px;
     border-bottom: 7px solid rgb(190, 189, 189);
@@ -15,6 +16,10 @@ header:after{
 .basket ul{
     padding: 0;
     margin-top: 40px;
+}
+.products img{
+    width: 200px;
+    height: 200px;
 }
 .basket li{
     display: inline-block;
@@ -51,4 +56,13 @@ header:after{
     0%{opacity: 0}
     50%{opacity: 1}
     100%{opacity: 0; right: 40px}
+}
+footer{
+    padding: 20px;
+    background: rgb(131, 131, 158);
+    text-align: center;
+}
+footer a{
+    font-size: 20px;
+    color: white;
 }
