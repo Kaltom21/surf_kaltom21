@@ -57,8 +57,9 @@ header h1{
     font-size: 18px;
 }
 .video_text video{
-    width: 570px;
+    width: 550px;
     height: 370px;
+    float: right;
 }
 
 .image{
